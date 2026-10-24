@@ -1,0 +1,84 @@
+{
+  "repositorio": "https://github.com/mmbassetto/Ummix-mcp",
+  "branch": "main",
+  "commit": "b29e4f51493619634f2abcb15c2ee90af727a4a6",
+  "publico": true,
+  "autenticacao_nas_leituras": false,
+  "arquivos_remotos_iguais_ao_commit_local": 54,
+  "verificacoes_http": [
+    {
+      "arquivo": "README.md",
+      "http_sem_autenticacao": 200,
+      "bytes": 13312,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/README.md"
+    },
+    {
+      "arquivo": "docs/BMC.md",
+      "http_sem_autenticacao": 200,
+      "bytes": 5162,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/docs/BMC.md"
+    },
+    {
+      "arquivo": "docs/PITCH_3_MIN.md",
+      "http_sem_autenticacao": 200,
+      "bytes": 3785,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/docs/PITCH_3_MIN.md"
+    },
+    {
+      "arquivo": "docs/FLUXO_AGENTE.md",
+      "http_sem_autenticacao": 200,
+      "bytes": 7226,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/docs/FLUXO_AGENTE.md"
+    },
+    {
+      "arquivo": "pyproject.toml",
+      "http_sem_autenticacao": 200,
+      "bytes": 762,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/pyproject.toml"
+    },
+    {
+      "arquivo": "video-demo/roteiro.md",
+      "http_sem_autenticacao": 200,
+      "bytes": 2529,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/video-demo/roteiro.md"
+    },
+    {
+      "arquivo": "video-demo/validacao.md",
+      "http_sem_autenticacao": 200,
+      "bytes": 3056,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/video-demo/validacao.md"
+    },
+    {
+      "arquivo": "docs/evidencias/demo_mcp.json",
+      "http_sem_autenticacao": 200,
+      "bytes": 37483,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/docs/evidencias/demo_mcp.json"
+    },
+    {
+      "arquivo": "video-demo/ummix-mcp-demo.mp4",
+      "http_sem_autenticacao": 200,
+      "bytes": 17866768,
+      "git_blob_conferido": true,
+      "url": "https://raw.githubusercontent.com/mmbassetto/Ummix-mcp/main/video-demo/ummix-mcp-demo.mp4",
+      "sha256": "c6c635ef2a513db3410d5edd0e345e085aeb051776d4a9cdceaf8ccd7ad02833"
+    }
+  ],
+  "escopo": "Verificação pública do primeiro snapshot publicado. O código foi clonado do remoto e testado; ajustes posteriores são de documentação e evidências.",
+  "teste_codigo_clonado": {
+    "comando": "PYTHONPATH=src python -m pytest -q --basetemp=var/pytest-remoto",
+    "testes": 116,
+    "falhas": 0,
+    "erros": 0,
+    "pulados": 0,
+    "duracao_segundos": 18.691,
+    "preparacao": "Criar var antes de --basetemp em clone novo."
+  }
+}

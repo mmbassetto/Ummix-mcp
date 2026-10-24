@@ -32,6 +32,7 @@ Os IDs de plano/simulação são de uma execução com dados fictícios. O banco
 ## Reproduzir os testes
 
 ```powershell
+New-Item -ItemType Directory -Force var | Out-Null
 & .\.venv\Scripts\python.exe -m pytest -q --basetemp=var/pytest-local
 & .\.venv\Scripts\python.exe -m pip check
 ```
@@ -43,3 +44,7 @@ Para o ensaio web real: iniciar a aplicação, autenticar o Codex e executar `sc
 Inventário, preços, capacidade e impressões são fictícios. A heurística não garante ótimo global. Alcance único e frequência não estão disponíveis, sem deduplicação. Público é afinidade editorial hipotética e objetivo é contexto textual. Não há dados reais de audiência, validação comercial ou integração de produção. O MCP original confia na declaração do cliente; a UI adiciona a permissão para este fluxo local. Auditoria/checksum não são invioláveis contra quem controla o banco.
 
 Nenhuma compra, cobrança, reserva, contratação ou publicação de mídia foi implementada. A entrega do código no GitHub não expõe o serviço web: a aplicação continua local e escuta loopback.
+
+## Conferência após o push
+
+Os arquivos foram lidos anonimamente do GitHub e comparados por hash com o commit publicado. O MP4 público retornou HTTP 200 e SHA-256 idêntico ao arquivo validado. Uma nova cópia foi clonada do remoto, seu código foi selecionado explicitamente no PYTHONPATH e os **116 testes passaram novamente**, sem falhas, erros ou pulados. Na primeira tentativa desse clone faltava a pasta pai de `--basetemp`; a pasta foi criada e as instruções corrigidas. Não houve alteração de funcionalidade. [Comprovação do snapshot e testes remotos](evidencias/publicacao_remota.json).

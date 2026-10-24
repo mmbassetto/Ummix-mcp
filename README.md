@@ -138,6 +138,7 @@ No vídeo: Eficiência, **R$ 5.000, cinco veículos e 16 inserções**; Diversif
 ## Testar
 
 ```powershell
+New-Item -ItemType Directory -Force var | Out-Null
 & .\.venv\Scripts\python.exe -m pytest -q --basetemp=var/pytest-local
 & .\.venv\Scripts\python.exe -m pip check
 ```

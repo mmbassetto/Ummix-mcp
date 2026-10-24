@@ -35,3 +35,7 @@ Cabe ao responsável:
 4. Conferir acesso público aos links e guardar o comprovante de submissão.
 
 O protótipo exige Python e, para o chat, Codex autenticado e internet. O vídeo pode ser reproduzido offline. As limitações técnicas e hipóteses comerciais estão expressas nos respectivos materiais. Não se afirma validação comercial ou parceria de produção.
+
+## Publicação conferida
+
+O primeiro snapshot foi publicado em `main`, commit `b29e4f51493619634f2abcb15c2ee90af727a4a6`. Os 54 arquivos daquele snapshot foram comparados com a árvore remota; os documentos essenciais e o MP4 foram lidos sem autenticação, com HTTP 200 e conteúdo íntegro. O código clonado do GitHub passou nos 116 testes. [Evidência](evidencias/publicacao_remota.json). A branch também recebe esta documentação de conferência.

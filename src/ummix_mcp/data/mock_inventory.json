@@ -1,0 +1,12 @@
+{
+  "versao": 1,
+  "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+  "itens": [
+    {"id":"gyn-radio","nome":"Rádio Nebulosa Fictícia","descricao":"Veículo fictício de teste; slot ilustrativo de 30 segundos.","mercado":"Goiânia","canal":"radio","faixa_horaria":"manha","segmentos":["geral","adultos","jovens"],"custo_por_insercao":"100.00","capacidade_diaria":8,"impressoes_por_insercao":8000,"dados_simulados":true},
+    {"id":"gyn-tv","nome":"TV Horizonte de Papel Fictícia","descricao":"Veículo fictício de teste; slot ilustrativo de 30 segundos.","mercado":"Goiânia","canal":"tv","faixa_horaria":"noite","segmentos":["geral","adultos","familias","empresarios"],"custo_por_insercao":"400.00","capacidade_diaria":3,"impressoes_por_insercao":50000,"dados_simulados":true},
+    {"id":"aps-radio","nome":"Rádio Cometa de Papel Fictícia","descricao":"Veículo fictício de teste; slot ilustrativo de 30 segundos.","mercado":"Anápolis","canal":"radio","faixa_horaria":"manha","segmentos":["geral","adultos","jovens"],"custo_por_insercao":"80.00","capacidade_diaria":6,"impressoes_por_insercao":6000,"dados_simulados":true},
+    {"id":"aps-tv","nome":"TV Prisma Imaginário Fictícia","descricao":"Veículo fictício de teste; slot ilustrativo de 30 segundos.","mercado":"Anápolis","canal":"tv","faixa_horaria":"noite","segmentos":["geral","adultos","familias","empresarios"],"custo_por_insercao":"300.00","capacidade_diaria":2,"impressoes_por_insercao":30000,"dados_simulados":true},
+    {"id":"rv-radio","nome":"Rádio Girassol Lunar Fictícia","descricao":"Veículo fictício de teste; slot ilustrativo de 30 segundos.","mercado":"Rio Verde","canal":"radio","faixa_horaria":"tarde","segmentos":["geral","adultos","jovens"],"custo_por_insercao":"60.00","capacidade_diaria":5,"impressoes_por_insercao":4000,"dados_simulados":true},
+    {"id":"rv-tv","nome":"TV Aurora de Brinquedo Fictícia","descricao":"Veículo fictício de teste; slot ilustrativo de 30 segundos.","mercado":"Rio Verde","canal":"tv","faixa_horaria":"noite","segmentos":["geral","adultos","familias","empresarios"],"custo_por_insercao":"250.00","capacidade_diaria":2,"impressoes_por_insercao":20000,"dados_simulados":true}
+  ]
+}

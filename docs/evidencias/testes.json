@@ -1,0 +1,14 @@
+{
+  "comando": "python -m pytest -q --basetemp=var/pytest-entrega-akcit",
+  "data": "2026-10-24",
+  "python": "3.12.14",
+  "sistema": "Windows",
+  "testes": 116,
+  "falhas": 0,
+  "erros": 0,
+  "pulados": 0,
+  "duracao_segundos": 18.959,
+  "pip_check": "No broken requirements found.",
+  "aviso_preexistente": "Depreciação HTTPX do TestClient/Starlette; não afeta o resultado.",
+  "modelo": "Fixtures apenas em testes unitários; vídeo e ensaio web usam IA real."
+}

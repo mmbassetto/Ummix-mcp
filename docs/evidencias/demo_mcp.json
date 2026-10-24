@@ -1,0 +1,1002 @@
+{
+  "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+  "dados_simulados": true,
+  "modelo_real": true,
+  "gravacao_continua": true,
+  "cliente": "Codex CLI",
+  "data_execucao": "2026-10-24T16:32:31.765Z",
+  "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+  "plan_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028",
+  "status": "RASCUNHO_APROVADO",
+  "decisao": {
+    "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+    "alternativa_id": "diversificacao",
+    "criterio": "mais_combinacoes_praca_canal",
+    "criterio_label": "Mais combinações de cidade e canal",
+    "campo_comparado": "combinacoes_praca_canal",
+    "comparacao": [
+      {
+        "alternativa_id": "eficiencia",
+        "nome": "Eficiência ilustrativa",
+        "valor": 5
+      },
+      {
+        "alternativa_id": "diversificacao",
+        "nome": "Diversificação ilustrativa",
+        "valor": 6
+      }
+    ],
+    "empate": false,
+    "verificada": true,
+    "escolha_por": "agente_ia",
+    "fonte": "simular_plano",
+    "evento_mcp": "566061b9-4ede-4251-9e5e-2d83b4cef592:item_4",
+    "dados_simulados": true
+  },
+  "aprovacoes_antes": 0,
+  "planos_antes": 0,
+  "aprovacoes_depois": 1,
+  "planos_depois": 1,
+  "checkbox_inicialmente_desmarcado": true,
+  "botao_inicialmente_bloqueado": true,
+  "recuperacao_mcp": {
+    "verified": true,
+    "plan_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028",
+    "source": "consultar_plano",
+    "storage": "SQLite",
+    "event_key": "99e2fae6-ab2c-4b10-8bbf-9755ca96d0ad:item_3",
+    "checked_at": "2026-10-24T13:31:46.778117-03:00"
+  },
+  "sqlite_conferido_independentemente": true,
+  "auditoria": [
+    {
+      "id": "d0792305-f0f6-4095-b413-ecf9bf9ec993",
+      "evento": "SIMULACAO_CRIADA",
+      "entidade_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+      "criado_em": "2026-10-24T16:29:55.519730+00:00",
+      "detalhes": {
+        "alternativas": [
+          "eficiencia",
+          "diversificacao"
+        ]
+      }
+    },
+    {
+      "id": "ef56eb0c-1962-4602-aac0-0f187da10de2",
+      "evento": "APROVACAO_REGISTRADA",
+      "entidade_id": "eaa28079-35c2-427e-88d9-2d0be8b83fc3",
+      "criado_em": "2026-10-24T16:31:41.416427+00:00",
+      "detalhes": {
+        "alternativa_id": "diversificacao"
+      }
+    },
+    {
+      "id": "8abaeb93-3263-4992-aad5-436580d0b761",
+      "evento": "PLANO_CRIADO",
+      "entidade_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028",
+      "criado_em": "2026-10-24T16:31:44.220460+00:00",
+      "detalhes": {
+        "alternativa_id": "diversificacao",
+        "status": "RASCUNHO_APROVADO"
+      }
+    }
+  ],
+  "chamadas_mcp": [
+    {
+      "ordem": 7,
+      "horario": "2026-10-24T13:29:50.915691-03:00",
+      "ferramenta": "listar_segmentos",
+      "argumentos": {},
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "mercados": [
+            "Goiânia",
+            "Anápolis",
+            "Rio Verde"
+          ],
+          "segmentos": [
+            "geral",
+            "adultos",
+            "jovens",
+            "familias",
+            "empresarios"
+          ],
+          "limitacoes": "Segmentação hipotética por afinidade editorial; não representa medição de audiência."
+        },
+        "erro": null
+      }
+    },
+    {
+      "ordem": 8,
+      "horario": "2026-10-24T13:29:50.916688-03:00",
+      "ferramenta": "listar_mercados",
+      "argumentos": {},
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "mercados": [
+            "Goiânia",
+            "Anápolis",
+            "Rio Verde"
+          ],
+          "fonte": "seed fictício v1"
+        },
+        "erro": null
+      }
+    },
+    {
+      "ordem": 10,
+      "horario": "2026-10-24T13:29:53.414673-03:00",
+      "ferramenta": "consultar_inventario",
+      "argumentos": {
+        "consulta": {
+          "mercados": [
+            "Goiânia",
+            "Anápolis",
+            "Rio Verde"
+          ],
+          "canais": [
+            "radio",
+            "tv"
+          ],
+          "publico": "adultos",
+          "periodo": {
+            "inicio": "2026-10-25",
+            "fim": "2026-10-31"
+          }
+        }
+      },
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "periodo": {
+            "inicio": "2026-10-25",
+            "fim": "2026-10-31"
+          },
+          "itens": [
+            {
+              "id": "aps-radio",
+              "nome": "Rádio Cometa de Papel Fictícia",
+              "descricao": "Veículo fictício de teste; slot ilustrativo de 30 segundos.",
+              "mercado": "Anápolis",
+              "canal": "radio",
+              "faixa_horaria": "manha",
+              "segmentos": [
+                "geral",
+                "adultos",
+                "jovens"
+              ],
+              "custo_por_insercao": "80.00",
+              "capacidade_diaria": 6,
+              "impressoes_por_insercao": 6000,
+              "dados_simulados": true,
+              "capacidade_periodo": 42,
+              "cpm_unitario_simulado": "13.33"
+            },
+            {
+              "id": "aps-tv",
+              "nome": "TV Prisma Imaginário Fictícia",
+              "descricao": "Veículo fictício de teste; slot ilustrativo de 30 segundos.",
+              "mercado": "Anápolis",
+              "canal": "tv",
+              "faixa_horaria": "noite",
+              "segmentos": [
+                "geral",
+                "adultos",
+                "familias",
+                "empresarios"
+              ],
+              "custo_por_insercao": "300.00",
+              "capacidade_diaria": 2,
+              "impressoes_por_insercao": 30000,
+              "dados_simulados": true,
+              "capacidade_periodo": 14,
+              "cpm_unitario_simulado": "10.00"
+            },
+            {
+              "id": "gyn-radio",
+              "nome": "Rádio Nebulosa Fictícia",
+              "descricao": "Veículo fictício de teste; slot ilustrativo de 30 segundos.",
+              "mercado": "Goiânia",
+              "canal": "radio",
+              "faixa_horaria": "manha",
+              "segmentos": [
+                "geral",
+                "adultos",
+                "jovens"
+              ],
+              "custo_por_insercao": "100.00",
+              "capacidade_diaria": 8,
+              "impressoes_por_insercao": 8000,
+              "dados_simulados": true,
+              "capacidade_periodo": 56,
+              "cpm_unitario_simulado": "12.50"
+            },
+            {
+              "id": "gyn-tv",
+              "nome": "TV Horizonte de Papel Fictícia",
+              "descricao": "Veículo fictício de teste; slot ilustrativo de 30 segundos.",
+              "mercado": "Goiânia",
+              "canal": "tv",
+              "faixa_horaria": "noite",
+              "segmentos": [
+                "geral",
+                "adultos",
+                "familias",
+                "empresarios"
+              ],
+              "custo_por_insercao": "400.00",
+              "capacidade_diaria": 3,
+              "impressoes_por_insercao": 50000,
+              "dados_simulados": true,
+              "capacidade_periodo": 21,
+              "cpm_unitario_simulado": "8.00"
+            },
+            {
+              "id": "rv-radio",
+              "nome": "Rádio Girassol Lunar Fictícia",
+              "descricao": "Veículo fictício de teste; slot ilustrativo de 30 segundos.",
+              "mercado": "Rio Verde",
+              "canal": "radio",
+              "faixa_horaria": "tarde",
+              "segmentos": [
+                "geral",
+                "adultos",
+                "jovens"
+              ],
+              "custo_por_insercao": "60.00",
+              "capacidade_diaria": 5,
+              "impressoes_por_insercao": 4000,
+              "dados_simulados": true,
+              "capacidade_periodo": 35,
+              "cpm_unitario_simulado": "15.00"
+            },
+            {
+              "id": "rv-tv",
+              "nome": "TV Aurora de Brinquedo Fictícia",
+              "descricao": "Veículo fictício de teste; slot ilustrativo de 30 segundos.",
+              "mercado": "Rio Verde",
+              "canal": "tv",
+              "faixa_horaria": "noite",
+              "segmentos": [
+                "geral",
+                "adultos",
+                "familias",
+                "empresarios"
+              ],
+              "custo_por_insercao": "250.00",
+              "capacidade_diaria": 2,
+              "impressoes_por_insercao": 20000,
+              "dados_simulados": true,
+              "capacidade_periodo": 14,
+              "cpm_unitario_simulado": "12.50"
+            }
+          ],
+          "premissas": [
+            "Todos os veículos, preços, capacidades e impressões são fictícios; moeda ilustrativa BRL.",
+            "Capacidade do período = capacidade diária × dias inclusivos; distribuição diária uniforme possível.",
+            "Cada praça solicitada recebe pelo menos uma inserção; canais são elegíveis, não cotas obrigatórias.",
+            "Impressões brutas sintéticas = inserções × impressões por inserção, constantes e aditivas, sem promessa de entrega.",
+            "CPM = custo / impressões estimadas × 1000, somente com impressões conhecidas em todos os itens.",
+            "Alcance único e frequência omitidos: não há dados de deduplicação ou modelo de sobreposição validado.",
+            "Objetivo é contexto textual; público filtra segmentos exatos do seed, sem inferência semântica.",
+            "Heurística de eficiência usa CPM unitário; não garante ótimo global nem precisão estatística.",
+            "Planos são rascunhos independentes: não reservam nem consomem inventário entre simulações."
+          ]
+        },
+        "erro": null
+      }
+    },
+    {
+      "ordem": 12,
+      "horario": "2026-10-24T13:29:55.569195-03:00",
+      "ferramenta": "simular_plano",
+      "argumentos": {
+        "briefing": {
+          "objetivo": "Divulgar um produto fictício",
+          "mercados": [
+            "Goiânia",
+            "Anápolis",
+            "Rio Verde"
+          ],
+          "publico": "adultos",
+          "orcamento": 5000,
+          "canais": [
+            "radio",
+            "tv"
+          ],
+          "periodo": {
+            "inicio": "2026-10-25",
+            "fim": "2026-10-31"
+          }
+        }
+      },
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "briefing": {
+            "objetivo": "Divulgar um produto fictício",
+            "publico": "adultos",
+            "mercados": [
+              "Goiânia",
+              "Anápolis",
+              "Rio Verde"
+            ],
+            "orcamento": "5000",
+            "periodo": {
+              "inicio": "2026-10-25",
+              "fim": "2026-10-31"
+            },
+            "canais": [
+              "radio",
+              "tv"
+            ],
+            "restricoes": {
+              "excluir_veiculos": [],
+              "faixa_horaria": null,
+              "max_insercoes_por_veiculo": null
+            }
+          },
+          "alternativas": [
+            {
+              "alternativa_id": "eficiencia",
+              "nome": "Eficiência ilustrativa",
+              "alocacao": [
+                {
+                  "veiculo_id": "aps-radio",
+                  "nome": "Rádio Cometa de Papel Fictícia",
+                  "mercado": "Anápolis",
+                  "canal": "radio",
+                  "faixa_horaria": "manha",
+                  "insercoes": 1,
+                  "capacidade_periodo": 42,
+                  "capacidade_diaria": 6,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "80.00",
+                  "custo_total": "80.00",
+                  "impressoes_estimadas": 6000
+                },
+                {
+                  "veiculo_id": "aps-tv",
+                  "nome": "TV Prisma Imaginário Fictícia",
+                  "mercado": "Anápolis",
+                  "canal": "tv",
+                  "faixa_horaria": "noite",
+                  "insercoes": 1,
+                  "capacidade_periodo": 14,
+                  "capacidade_diaria": 2,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "300.00",
+                  "custo_total": "300.00",
+                  "impressoes_estimadas": 30000
+                },
+                {
+                  "veiculo_id": "gyn-radio",
+                  "nome": "Rádio Nebulosa Fictícia",
+                  "mercado": "Goiânia",
+                  "canal": "radio",
+                  "faixa_horaria": "manha",
+                  "insercoes": 1,
+                  "capacidade_periodo": 56,
+                  "capacidade_diaria": 8,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "100.00",
+                  "custo_total": "100.00",
+                  "impressoes_estimadas": 8000
+                },
+                {
+                  "veiculo_id": "gyn-tv",
+                  "nome": "TV Horizonte de Papel Fictícia",
+                  "mercado": "Goiânia",
+                  "canal": "tv",
+                  "faixa_horaria": "noite",
+                  "insercoes": 11,
+                  "capacidade_periodo": 21,
+                  "capacidade_diaria": 3,
+                  "distribuicao_diaria": {
+                    "base": 1,
+                    "dias_com_uma_extra": 4
+                  },
+                  "custo_unitario": "400.00",
+                  "custo_total": "4400.00",
+                  "impressoes_estimadas": 550000
+                },
+                {
+                  "veiculo_id": "rv-radio",
+                  "nome": "Rádio Girassol Lunar Fictícia",
+                  "mercado": "Rio Verde",
+                  "canal": "radio",
+                  "faixa_horaria": "tarde",
+                  "insercoes": 2,
+                  "capacidade_periodo": 35,
+                  "capacidade_diaria": 5,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 2
+                  },
+                  "custo_unitario": "60.00",
+                  "custo_total": "120.00",
+                  "impressoes_estimadas": 8000
+                }
+              ],
+              "custo_total": "5000.00",
+              "saldo": "0.00",
+              "impressoes_estimadas": 602000,
+              "cpm_estimado": "8.31",
+              "alcance_unico_estimado": null,
+              "frequencia_media": null,
+              "justificativa": "Mantém presença mínima por praça e concentra saldo por CPM unitário conhecido; desempate por preço e ID."
+            },
+            {
+              "alternativa_id": "diversificacao",
+              "nome": "Diversificação ilustrativa",
+              "alocacao": [
+                {
+                  "veiculo_id": "aps-radio",
+                  "nome": "Rádio Cometa de Papel Fictícia",
+                  "mercado": "Anápolis",
+                  "canal": "radio",
+                  "faixa_horaria": "manha",
+                  "insercoes": 1,
+                  "capacidade_periodo": 42,
+                  "capacidade_diaria": 6,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "80.00",
+                  "custo_total": "80.00",
+                  "impressoes_estimadas": 6000
+                },
+                {
+                  "veiculo_id": "aps-tv",
+                  "nome": "TV Prisma Imaginário Fictícia",
+                  "mercado": "Anápolis",
+                  "canal": "tv",
+                  "faixa_horaria": "noite",
+                  "insercoes": 1,
+                  "capacidade_periodo": 14,
+                  "capacidade_diaria": 2,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "300.00",
+                  "custo_total": "300.00",
+                  "impressoes_estimadas": 30000
+                },
+                {
+                  "veiculo_id": "gyn-radio",
+                  "nome": "Rádio Nebulosa Fictícia",
+                  "mercado": "Goiânia",
+                  "canal": "radio",
+                  "faixa_horaria": "manha",
+                  "insercoes": 3,
+                  "capacidade_periodo": 56,
+                  "capacidade_diaria": 8,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 3
+                  },
+                  "custo_unitario": "100.00",
+                  "custo_total": "300.00",
+                  "impressoes_estimadas": 24000
+                },
+                {
+                  "veiculo_id": "gyn-tv",
+                  "nome": "TV Horizonte de Papel Fictícia",
+                  "mercado": "Goiânia",
+                  "canal": "tv",
+                  "faixa_horaria": "noite",
+                  "insercoes": 10,
+                  "capacidade_periodo": 21,
+                  "capacidade_diaria": 3,
+                  "distribuicao_diaria": {
+                    "base": 1,
+                    "dias_com_uma_extra": 3
+                  },
+                  "custo_unitario": "400.00",
+                  "custo_total": "4000.00",
+                  "impressoes_estimadas": 500000
+                },
+                {
+                  "veiculo_id": "rv-radio",
+                  "nome": "Rádio Girassol Lunar Fictícia",
+                  "mercado": "Rio Verde",
+                  "canal": "radio",
+                  "faixa_horaria": "tarde",
+                  "insercoes": 1,
+                  "capacidade_periodo": 35,
+                  "capacidade_diaria": 5,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "60.00",
+                  "custo_total": "60.00",
+                  "impressoes_estimadas": 4000
+                },
+                {
+                  "veiculo_id": "rv-tv",
+                  "nome": "TV Aurora de Brinquedo Fictícia",
+                  "mercado": "Rio Verde",
+                  "canal": "tv",
+                  "faixa_horaria": "noite",
+                  "insercoes": 1,
+                  "capacidade_periodo": 14,
+                  "capacidade_diaria": 2,
+                  "distribuicao_diaria": {
+                    "base": 0,
+                    "dias_com_uma_extra": 1
+                  },
+                  "custo_unitario": "250.00",
+                  "custo_total": "250.00",
+                  "impressoes_estimadas": 20000
+                }
+              ],
+              "custo_total": "4990.00",
+              "saldo": "10.00",
+              "impressoes_estimadas": 584000,
+              "cpm_estimado": "8.54",
+              "alcance_unico_estimado": null,
+              "frequencia_media": null,
+              "justificativa": "Prioriza uma inserção por veículo elegível que caiba no saldo e depois preenche por CPM unitário."
+            }
+          ],
+          "premissas": [
+            "Todos os veículos, preços, capacidades e impressões são fictícios; moeda ilustrativa BRL.",
+            "Capacidade do período = capacidade diária × dias inclusivos; distribuição diária uniforme possível.",
+            "Cada praça solicitada recebe pelo menos uma inserção; canais são elegíveis, não cotas obrigatórias.",
+            "Impressões brutas sintéticas = inserções × impressões por inserção, constantes e aditivas, sem promessa de entrega.",
+            "CPM = custo / impressões estimadas × 1000, somente com impressões conhecidas em todos os itens.",
+            "Alcance único e frequência omitidos: não há dados de deduplicação ou modelo de sobreposição validado.",
+            "Objetivo é contexto textual; público filtra segmentos exatos do seed, sem inferência semântica.",
+            "Heurística de eficiência usa CPM unitário; não garante ótimo global nem precisão estatística.",
+            "Planos são rascunhos independentes: não reservam nem consomem inventário entre simulações."
+          ],
+          "alertas": [],
+          "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+          "criada_em": "2026-10-24T16:29:55.512259+00:00",
+          "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+          "dados_simulados": true
+        },
+        "erro": null
+      }
+    },
+    {
+      "ordem": 23,
+      "horario": "2026-10-24T13:31:41.454663-03:00",
+      "ferramenta": "registrar_aprovacao",
+      "argumentos": {
+        "alternativa_id": "diversificacao",
+        "confirmacao_explicita": true,
+        "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d"
+      },
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "approval_id": "eaa28079-35c2-427e-88d9-2d0be8b83fc3",
+          "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+          "alternativa_id": "diversificacao",
+          "criada_em": "2026-10-24T16:31:41.411196+00:00",
+          "expira_em": "2026-10-24T17:01:41.411196+00:00",
+          "confirmacao_explicita": true
+        },
+        "erro": null
+      }
+    },
+    {
+      "ordem": 25,
+      "horario": "2026-10-24T13:31:44.258856-03:00",
+      "ferramenta": "criar_plano",
+      "argumentos": {
+        "alternativa_id": "diversificacao",
+        "approval_id": "eaa28079-35c2-427e-88d9-2d0be8b83fc3",
+        "chave_idempotente": "web-0078d99c-a3b6-41c1-93fa-1013f3ecef0d-diversificacao",
+        "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d"
+      },
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "plan_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028",
+          "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+          "alternativa_id": "diversificacao",
+          "approval_id": "eaa28079-35c2-427e-88d9-2d0be8b83fc3",
+          "status": "RASCUNHO_APROVADO",
+          "criado_em": "2026-10-24T16:31:44.219376+00:00",
+          "briefing": {
+            "canais": [
+              "radio",
+              "tv"
+            ],
+            "mercados": [
+              "Goiânia",
+              "Anápolis",
+              "Rio Verde"
+            ],
+            "objetivo": "Divulgar um produto fictício",
+            "orcamento": "5000",
+            "periodo": {
+              "fim": "2026-10-31",
+              "inicio": "2026-10-25"
+            },
+            "publico": "adultos",
+            "restricoes": {
+              "excluir_veiculos": [],
+              "faixa_horaria": null,
+              "max_insercoes_por_veiculo": null
+            }
+          },
+          "alternativa": {
+            "alcance_unico_estimado": null,
+            "alocacao": [
+              {
+                "canal": "radio",
+                "capacidade_diaria": 6,
+                "capacidade_periodo": 42,
+                "custo_total": "80.00",
+                "custo_unitario": "80.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "manha",
+                "impressoes_estimadas": 6000,
+                "insercoes": 1,
+                "mercado": "Anápolis",
+                "nome": "Rádio Cometa de Papel Fictícia",
+                "veiculo_id": "aps-radio"
+              },
+              {
+                "canal": "tv",
+                "capacidade_diaria": 2,
+                "capacidade_periodo": 14,
+                "custo_total": "300.00",
+                "custo_unitario": "300.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "noite",
+                "impressoes_estimadas": 30000,
+                "insercoes": 1,
+                "mercado": "Anápolis",
+                "nome": "TV Prisma Imaginário Fictícia",
+                "veiculo_id": "aps-tv"
+              },
+              {
+                "canal": "radio",
+                "capacidade_diaria": 8,
+                "capacidade_periodo": 56,
+                "custo_total": "300.00",
+                "custo_unitario": "100.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 3
+                },
+                "faixa_horaria": "manha",
+                "impressoes_estimadas": 24000,
+                "insercoes": 3,
+                "mercado": "Goiânia",
+                "nome": "Rádio Nebulosa Fictícia",
+                "veiculo_id": "gyn-radio"
+              },
+              {
+                "canal": "tv",
+                "capacidade_diaria": 3,
+                "capacidade_periodo": 21,
+                "custo_total": "4000.00",
+                "custo_unitario": "400.00",
+                "distribuicao_diaria": {
+                  "base": 1,
+                  "dias_com_uma_extra": 3
+                },
+                "faixa_horaria": "noite",
+                "impressoes_estimadas": 500000,
+                "insercoes": 10,
+                "mercado": "Goiânia",
+                "nome": "TV Horizonte de Papel Fictícia",
+                "veiculo_id": "gyn-tv"
+              },
+              {
+                "canal": "radio",
+                "capacidade_diaria": 5,
+                "capacidade_periodo": 35,
+                "custo_total": "60.00",
+                "custo_unitario": "60.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "tarde",
+                "impressoes_estimadas": 4000,
+                "insercoes": 1,
+                "mercado": "Rio Verde",
+                "nome": "Rádio Girassol Lunar Fictícia",
+                "veiculo_id": "rv-radio"
+              },
+              {
+                "canal": "tv",
+                "capacidade_diaria": 2,
+                "capacidade_periodo": 14,
+                "custo_total": "250.00",
+                "custo_unitario": "250.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "noite",
+                "impressoes_estimadas": 20000,
+                "insercoes": 1,
+                "mercado": "Rio Verde",
+                "nome": "TV Aurora de Brinquedo Fictícia",
+                "veiculo_id": "rv-tv"
+              }
+            ],
+            "alternativa_id": "diversificacao",
+            "cpm_estimado": "8.54",
+            "custo_total": "4990.00",
+            "frequencia_media": null,
+            "impressoes_estimadas": 584000,
+            "justificativa": "Prioriza uma inserção por veículo elegível que caiba no saldo e depois preenche por CPM unitário.",
+            "nome": "Diversificação ilustrativa",
+            "saldo": "10.00"
+          },
+          "premissas": [
+            "Todos os veículos, preços, capacidades e impressões são fictícios; moeda ilustrativa BRL.",
+            "Capacidade do período = capacidade diária × dias inclusivos; distribuição diária uniforme possível.",
+            "Cada praça solicitada recebe pelo menos uma inserção; canais são elegíveis, não cotas obrigatórias.",
+            "Impressões brutas sintéticas = inserções × impressões por inserção, constantes e aditivas, sem promessa de entrega.",
+            "CPM = custo / impressões estimadas × 1000, somente com impressões conhecidas em todos os itens.",
+            "Alcance único e frequência omitidos: não há dados de deduplicação ou modelo de sobreposição validado.",
+            "Objetivo é contexto textual; público filtra segmentos exatos do seed, sem inferência semântica.",
+            "Heurística de eficiência usa CPM unitário; não garante ótimo global nem precisão estatística.",
+            "Planos são rascunhos independentes: não reservam nem consomem inventário entre simulações."
+          ],
+          "alertas": [],
+          "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+          "dados_simulados": true,
+          "reutilizado": false
+        },
+        "erro": null
+      }
+    },
+    {
+      "ordem": 28,
+      "horario": "2026-10-24T13:31:46.778117-03:00",
+      "ferramenta": "consultar_plano",
+      "argumentos": {
+        "plan_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028"
+      },
+      "resposta": {
+        "ok": true,
+        "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+        "dados_simulados": true,
+        "dados": {
+          "alertas": [],
+          "alternativa": {
+            "alcance_unico_estimado": null,
+            "alocacao": [
+              {
+                "canal": "radio",
+                "capacidade_diaria": 6,
+                "capacidade_periodo": 42,
+                "custo_total": "80.00",
+                "custo_unitario": "80.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "manha",
+                "impressoes_estimadas": 6000,
+                "insercoes": 1,
+                "mercado": "Anápolis",
+                "nome": "Rádio Cometa de Papel Fictícia",
+                "veiculo_id": "aps-radio"
+              },
+              {
+                "canal": "tv",
+                "capacidade_diaria": 2,
+                "capacidade_periodo": 14,
+                "custo_total": "300.00",
+                "custo_unitario": "300.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "noite",
+                "impressoes_estimadas": 30000,
+                "insercoes": 1,
+                "mercado": "Anápolis",
+                "nome": "TV Prisma Imaginário Fictícia",
+                "veiculo_id": "aps-tv"
+              },
+              {
+                "canal": "radio",
+                "capacidade_diaria": 8,
+                "capacidade_periodo": 56,
+                "custo_total": "300.00",
+                "custo_unitario": "100.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 3
+                },
+                "faixa_horaria": "manha",
+                "impressoes_estimadas": 24000,
+                "insercoes": 3,
+                "mercado": "Goiânia",
+                "nome": "Rádio Nebulosa Fictícia",
+                "veiculo_id": "gyn-radio"
+              },
+              {
+                "canal": "tv",
+                "capacidade_diaria": 3,
+                "capacidade_periodo": 21,
+                "custo_total": "4000.00",
+                "custo_unitario": "400.00",
+                "distribuicao_diaria": {
+                  "base": 1,
+                  "dias_com_uma_extra": 3
+                },
+                "faixa_horaria": "noite",
+                "impressoes_estimadas": 500000,
+                "insercoes": 10,
+                "mercado": "Goiânia",
+                "nome": "TV Horizonte de Papel Fictícia",
+                "veiculo_id": "gyn-tv"
+              },
+              {
+                "canal": "radio",
+                "capacidade_diaria": 5,
+                "capacidade_periodo": 35,
+                "custo_total": "60.00",
+                "custo_unitario": "60.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "tarde",
+                "impressoes_estimadas": 4000,
+                "insercoes": 1,
+                "mercado": "Rio Verde",
+                "nome": "Rádio Girassol Lunar Fictícia",
+                "veiculo_id": "rv-radio"
+              },
+              {
+                "canal": "tv",
+                "capacidade_diaria": 2,
+                "capacidade_periodo": 14,
+                "custo_total": "250.00",
+                "custo_unitario": "250.00",
+                "distribuicao_diaria": {
+                  "base": 0,
+                  "dias_com_uma_extra": 1
+                },
+                "faixa_horaria": "noite",
+                "impressoes_estimadas": 20000,
+                "insercoes": 1,
+                "mercado": "Rio Verde",
+                "nome": "TV Aurora de Brinquedo Fictícia",
+                "veiculo_id": "rv-tv"
+              }
+            ],
+            "alternativa_id": "diversificacao",
+            "cpm_estimado": "8.54",
+            "custo_total": "4990.00",
+            "frequencia_media": null,
+            "impressoes_estimadas": 584000,
+            "justificativa": "Prioriza uma inserção por veículo elegível que caiba no saldo e depois preenche por CPM unitário.",
+            "nome": "Diversificação ilustrativa",
+            "saldo": "10.00"
+          },
+          "alternativa_id": "diversificacao",
+          "approval_id": "eaa28079-35c2-427e-88d9-2d0be8b83fc3",
+          "aviso": "DEMONSTRAÇÃO COM DADOS SIMULADOS",
+          "briefing": {
+            "canais": [
+              "radio",
+              "tv"
+            ],
+            "mercados": [
+              "Goiânia",
+              "Anápolis",
+              "Rio Verde"
+            ],
+            "objetivo": "Divulgar um produto fictício",
+            "orcamento": "5000",
+            "periodo": {
+              "fim": "2026-10-31",
+              "inicio": "2026-10-25"
+            },
+            "publico": "adultos",
+            "restricoes": {
+              "excluir_veiculos": [],
+              "faixa_horaria": null,
+              "max_insercoes_por_veiculo": null
+            }
+          },
+          "criado_em": "2026-10-24T16:31:44.219376+00:00",
+          "dados_simulados": true,
+          "plan_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028",
+          "premissas": [
+            "Todos os veículos, preços, capacidades e impressões são fictícios; moeda ilustrativa BRL.",
+            "Capacidade do período = capacidade diária × dias inclusivos; distribuição diária uniforme possível.",
+            "Cada praça solicitada recebe pelo menos uma inserção; canais são elegíveis, não cotas obrigatórias.",
+            "Impressões brutas sintéticas = inserções × impressões por inserção, constantes e aditivas, sem promessa de entrega.",
+            "CPM = custo / impressões estimadas × 1000, somente com impressões conhecidas em todos os itens.",
+            "Alcance único e frequência omitidos: não há dados de deduplicação ou modelo de sobreposição validado.",
+            "Objetivo é contexto textual; público filtra segmentos exatos do seed, sem inferência semântica.",
+            "Heurística de eficiência usa CPM unitário; não garante ótimo global nem precisão estatística.",
+            "Planos são rascunhos independentes: não reservam nem consomem inventário entre simulações."
+          ],
+          "simulation_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+          "status": "RASCUNHO_APROVADO",
+          "auditoria": [
+            {
+              "id": "d0792305-f0f6-4095-b413-ecf9bf9ec993",
+              "evento": "SIMULACAO_CRIADA",
+              "entidade_id": "0078d99c-a3b6-41c1-93fa-1013f3ecef0d",
+              "criado_em": "2026-10-24T16:29:55.519730+00:00",
+              "detalhes": {
+                "alternativas": [
+                  "eficiencia",
+                  "diversificacao"
+                ]
+              }
+            },
+            {
+              "id": "ef56eb0c-1962-4602-aac0-0f187da10de2",
+              "evento": "APROVACAO_REGISTRADA",
+              "entidade_id": "eaa28079-35c2-427e-88d9-2d0be8b83fc3",
+              "criado_em": "2026-10-24T16:31:41.416427+00:00",
+              "detalhes": {
+                "alternativa_id": "diversificacao"
+              }
+            },
+            {
+              "id": "8abaeb93-3263-4992-aad5-436580d0b761",
+              "evento": "PLANO_CRIADO",
+              "entidade_id": "a20f00ef-b382-4fd0-a2e7-54beb5714028",
+              "criado_em": "2026-10-24T16:31:44.220460+00:00",
+              "detalhes": {
+                "alternativa_id": "diversificacao",
+                "status": "RASCUNHO_APROVADO"
+              }
+            }
+          ]
+        },
+        "erro": null
+      }
+    }
+  ],
+  "video": {
+    "arquivo": "video-demo/ummix-mcp-demo.mp4",
+    "duracao_segundos": 192.01,
+    "resolucao": "1920x1080",
+    "sha256": "c6c635ef2a513db3410d5edd0e345e085aeb051776d4a9cdceaf8ccd7ad02833",
+    "quadros_decodificados": 4800,
+    "erros_decodificacao": 0
+  }
+}

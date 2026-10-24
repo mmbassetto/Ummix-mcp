@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ummix-mcp"
+version = "0.1.0"
+description = "Planejamento de mídia com MCP e dados inteiramente simulados"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["mcp==1.28.0", "pydantic==2.14.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.2"]
+web = ["starlette==1.9.0", "uvicorn==0.54.0"]
+
+[project.scripts]
+ummix-mcp = "ummix_mcp.server:main"
+ummix-demo = "ummix_mcp.demo:main"
+ummix-web = "ummix_mcp.web:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ummix_mcp = ["data/*.json", "static/*.html", "static/*.css", "static/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

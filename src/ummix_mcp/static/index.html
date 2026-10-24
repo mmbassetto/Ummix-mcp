@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ae1621">
+  <title>Ummix MCP | Planejamento com IA</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ae1621'/%3E%3Ctext x='12' y='46' font-size='46' font-family='Arial' font-weight='900' fill='white'%3Eu%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/app.css">
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="wordmark" href="/" aria-label="Ummix MCP início">umm<span>i</span>x<span class="ads">ads</span></a>
+    <div class="workspace-label">LABORATÓRIO DE MÍDIA <span>MCP</span></div>
+    <nav aria-label="Navegação"><a class="nav-item active" href="#planner"><span>◈</span> Planejador com IA <b>01</b></a><button class="nav-item" id="help-button"><span>↗</span> Guia da apresentação</button><a class="nav-item" id="export-link" href="#" download><span>≡</span> Exportar evidências</a></nav>
+    <div class="side-bottom"><div class="side-mark">Mídia off.<br><span>Inteligência digital.</span></div><p>Um briefing. Duas possibilidades.<br>Uma decisão sua.</p><div class="event-label"><span class="event-icon">A</span><div>AKCIT CAMP <small>HACKATHON · 2026</small></div></div></div>
+  </aside>
+  <div class="shell" id="planner">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong>Planejamento de campanha</strong></div><div class="top-actions"><button id="compact-help" class="button ghost small compact-action">Guia da demo</button><a id="compact-export" class="button ghost small compact-action" href="#" download>Evidências ↗</a><button id="new-chat" class="button ghost small">＋ Nova conversa</button></div></header>
+    <main>
+      <div class="notice"><span class="notice-dot"></span><strong>DEMONSTRAÇÃO COM DADOS SIMULADOS</strong><span class="notice-extra">Veículos, preços e métricas fictícios. Sem compra ou veiculação.</span></div>
+      <div class="page-heading"><div><p class="eyebrow">UMMIX MCP / AGENT EXPERIENCE</p><h1>Sua campanha começa com uma conversa<span>.</span></h1><p>Planeje rádio e TV com IA. Compare as opções. Aprove com confiança.</p></div><div class="connection" id="connection"><i class="dot"></i><div><strong>Verificando agente</strong><small>Codex CLI · LLM externo</small></div></div></div>
+      <div class="journey" aria-label="Etapas do planejamento"><div data-step="1" class="current"><b>01</b><span>Seu briefing</span></div><i></i><div data-step="2"><b>02</b><span>Agente em ação</span></div><i></i><div data-step="3"><b>03</b><span>Escolha e aprovação</span></div><i></i><div data-step="4"><b>04</b><span>Rascunho registrado</span></div></div>
+      <div class="main-grid">
+        <section class="chat-panel panel" aria-labelledby="chat-title">
+          <div class="panel-heading"><div class="agent-avatar">u<span>✦</span></div><div><h2 id="chat-title">Seu estrategista de mídia</h2><p>Conversa com IA real <span class="tiny-dot"></span></p></div><span class="live-label" id="chat-status">PRONTO</span></div>
+          <button class="quick-demo" data-example="complete">✦ Carregar briefing de demonstração <span>↗</span></button>
+          <div class="chat-messages" id="messages" role="log" aria-live="polite">
+            <div class="chat-intro"><span class="intro-symbol">✳</span><h3>Onde sua marca<br>quer chegar?</h3><p>Conte o que você quer divulgar. O agente ajuda a definir cidade, público, investimento e período.</p><div class="field-tags"><span>⌖ Cidade</span><span>◎ Público</span><span>⚑ Objetivo</span><span>R$ Orçamento</span><span>◷ Duração</span></div><p class="intro-caption">Para uma apresentação rápida</p><button class="example-card" data-example="complete"><span>✦</span><div><strong>Carregar briefing de demonstração</strong><small>3 cidades · rádio e TV · R$ 5.000 · 7 dias</small></div><b>↗</b></button><button class="text-button" data-example="short">Prefiro começar só com uma ideia →</button></div>
+          </div>
+          <div class="chat-working" id="working" hidden><span class="typing"><i></i><i></i><i></i></span><span id="working-text">Conectando ao agente…</span><span class="elapsed" id="elapsed"></span></div>
+          <div class="chat-error" id="chat-error" role="alert" hidden></div>
+          <form id="chat-form" class="composer"><label class="sr-only" for="prompt">Mensagem ao estrategista de mídia</label><textarea id="prompt" rows="2" maxlength="4000" placeholder="Quero divulgar meu negócio em Goiânia…" required></textarea><div class="composer-bottom"><span>IA real · dados de mídia simulados</span><button class="send-button" id="send" type="submit" aria-label="Enviar mensagem" disabled>↑</button></div></form>
+          <div class="composer-footnote">Enter envia <span>·</span> Shift + Enter quebra a linha</div>
+        </section>
+        <div class="results-column">
+          <section class="plan-panel panel" aria-labelledby="plan-title"><div class="section-heading"><div><p class="eyebrow">DO BRIEFING À DECISÃO</p><h2 id="plan-title">Seu plano de mídia</h2></div><span class="status-pill" id="plan-status">Aguardando briefing</span></div><div id="plan-content"><div class="plan-empty"><div class="signal-art" aria-hidden="true"><div class="signal-ring ring-one"></div><div class="signal-ring ring-two"></div><div class="signal-center">u<span>✦</span></div><span class="signal-tag radio">▥ Rádio</span><span class="signal-tag tv">▣ TV</span></div><h3>Estratégia na conversa.<br>Planejamento na tela.</h3><p>Assim que o agente consultar o inventário, você verá aqui alternativas reais do motor, com todos os dados identificados como simulados.</p><div class="empty-deliverables"><span><b>↗</b> Distribuição do investimento</span><span><b>≋</b> Veículos e inserções</span><span><b>✓</b> Aprovação com registro</span></div></div></div></section>
+          <section class="activity-panel panel" aria-labelledby="activity-title"><div class="activity-heading"><div><span class="activity-icon">⌘</span><h2 id="activity-title">Agente em ação</h2><span class="tool-count" id="tool-count">0 chamadas</span></div><span class="activity-live"><i></i> EVENTOS REAIS</span></div><div id="activity-content" class="activity-content"><div class="activity-empty"><span>◌</span><p>As chamadas MCP aparecerão aqui, conforme forem executadas.<small>Argumentos, resultados e validações disponíveis em cada evento.</small></p></div></div></section>
+        </div>
+      </div>
+      <footer><span>ummix <b>MCP</b> <i>●</i> Protótipo de planejamento assistido</span><span>Você decide. A IA planeja. O MCP conecta.</span><button id="check-connection" class="text-button">Verificar conexão ↗</button></footer>
+    </main>
+  </div>
+  <dialog id="approval-dialog"><form method="dialog" class="dialog-layout"><div class="dialog-top"><span class="eyebrow">SUA DECISÃO, REGISTRADA</span><button class="close-dialog" value="cancel" aria-label="Fechar confirmação">×</button></div><h2>Aprovar este planejamento?</h2><p>Você autoriza somente o registro de um <strong>rascunho com dados simulados</strong>.</p><div id="approval-summary"></div><label class="confirmation"><input id="approval-check" type="checkbox">Confirmo explicitamente a simulação e a alternativa acima.</label><p class="dialog-footnote">Não há compra, pagamento, reserva ou publicação de campanha.</p><div class="dialog-actions"><button class="button ghost" value="cancel">Voltar</button><button class="button primary" id="confirm-approval" type="button" disabled>Confirmar aprovação →</button></div></form></dialog>
+  <dialog id="help-dialog"><div class="dialog-layout"><div class="dialog-top"><span class="eyebrow">DEMO DE TRÊS MINUTOS</span><button class="close-dialog" id="close-help" aria-label="Fechar guia">×</button></div><h2>Da conversa ao rascunho.</h2><ol class="demo-guide"><li><b>00:00 — 00:30</b> Apresente a proposta e destaque os dados simulados.</li><li><b>00:30 — 01:15</b> Carregue o briefing de demonstração e envie ao agente real.</li><li><b>01:15 — 02:00</b> Mostre as chamadas MCP e compare as alternativas.</li><li><b>02:00 — 02:45</b> Escolha uma alternativa e confirme a aprovação.</li><li><b>02:45 — 03:00</b> Mostre o ID, a auditoria SQLite e exporte a evidência.</li></ol><p>Depende da rede e da disponibilidade do modelo. Se houver falha, ela será exibida; a interface não inventa uma resposta.</p><p class="dialog-footnote">Alcance único e frequência não estão disponíveis sem deduplicação. Impressões são brutas e sintéticas.</p></div></dialog>
+</body></html>

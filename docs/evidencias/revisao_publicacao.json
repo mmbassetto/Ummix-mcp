@@ -1,0 +1,11 @@
+{
+  "data": "2026-10-24",
+  "arquivos_revisados": 54,
+  "busca": "tokens GitHub/OpenAI/AWS, JWT, chave privada, segredo literal e caminho pessoal",
+  "achados": [],
+  "links_locais_ausentes": [],
+  "arquivos_acima_50mb": [],
+  "bancos_credenciais_cache_logs_intermediarios": "Excluídos por .gitignore; conjunto elegível inspecionado.",
+  "mp4": "Apenas demonstração fictícia; revisão visual concluída.",
+  "limite": "Varredura preventiva, não garantia universal."
+}
